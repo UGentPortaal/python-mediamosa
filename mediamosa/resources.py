@@ -237,7 +237,7 @@ class AssetList(list):
         self.index = -1
         return self
 
-    def next(self):
+    def __next__(self):
         self.index += 1
         if -1 < self.index < len(self):
             return self[self.index]
